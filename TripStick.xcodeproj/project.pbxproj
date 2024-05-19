@@ -14,9 +14,9 @@
 		0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA512BFA666D00E52C45 /* NetworkClient.swift */; };
 		0459CA5A2BFA676D00E52C45 /* TripStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA592BFA676D00E52C45 /* TripStickTests.swift */; };
 		0459CA622BFA679900E52C45 /* TestNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA612BFA679900E52C45 /* TestNetworkClient.swift */; };
-		0498BD562BFA6351007EFEE6 /* TripStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498BD552BFA6351007EFEE6 /* TripStickApp.swift */; };
+		0459CA6E2BFA747E00E52C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459CA6A2BFA747E00E52C45 /* Assets.xcassets */; };
+		0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA6C2BFA747E00E52C45 /* TripStickApp.swift */; };
 		0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498BD572BFA6351007EFEE6 /* ContentView.swift */; };
-		0498BD5A2BFA6351007EFEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498BD592BFA6351007EFEE6 /* Assets.xcassets */; };
 		0498BD5D2BFA6351007EFEE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498BD5C2BFA6351007EFEE6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +37,10 @@
 		0459CA572BFA676D00E52C45 /* TripStickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripStickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0459CA592BFA676D00E52C45 /* TripStickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStickTests.swift; sourceTree = "<group>"; };
 		0459CA612BFA679900E52C45 /* TestNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkClient.swift; sourceTree = "<group>"; };
+		0459CA6A2BFA747E00E52C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0459CA6C2BFA747E00E52C45 /* TripStickApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStickApp.swift; sourceTree = "<group>"; };
 		0498BD522BFA6351007EFEE6 /* TripStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0498BD552BFA6351007EFEE6 /* TripStickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStickApp.swift; sourceTree = "<group>"; };
 		0498BD572BFA6351007EFEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0498BD592BFA6351007EFEE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0498BD5C2BFA6351007EFEE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +107,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		0459CA6B2BFA747E00E52C45 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				0459CA6A2BFA747E00E52C45 /* Assets.xcassets */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		0459CA6D2BFA747E00E52C45 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0459CA6C2BFA747E00E52C45 /* TripStickApp.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
 		0498BD492BFA6350007EFEE6 = {
 			isa = PBXGroup;
 			children = (
@@ -128,10 +144,10 @@
 		0498BD542BFA6351007EFEE6 /* TripStick */ = {
 			isa = PBXGroup;
 			children = (
+				0459CA6D2BFA747E00E52C45 /* AppFiles */,
+				0459CA6B2BFA747E00E52C45 /* Catalog */,
 				0459CA452BFA648100E52C45 /* Network */,
-				0498BD552BFA6351007EFEE6 /* TripStickApp.swift */,
 				0498BD572BFA6351007EFEE6 /* ContentView.swift */,
-				0498BD592BFA6351007EFEE6 /* Assets.xcassets */,
 				0498BD5B2BFA6351007EFEE6 /* Preview Content */,
 			);
 			path = TripStick;
@@ -240,8 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459CA6E2BFA747E00E52C45 /* Assets.xcassets in Resources */,
 				0498BD5D2BFA6351007EFEE6 /* Preview Assets.xcassets in Resources */,
-				0498BD5A2BFA6351007EFEE6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +280,8 @@
 				0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */,
 				0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */,
 				0459CA502BFA664A00E52C45 /* AnyNetwork.swift in Sources */,
+				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
-				0498BD562BFA6351007EFEE6 /* TripStickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
