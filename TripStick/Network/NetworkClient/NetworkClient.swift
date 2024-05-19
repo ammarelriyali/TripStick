@@ -28,6 +28,7 @@ struct NetworkClient: AnyNetwork {
             parameters: parameters,
             headers: headers
         ).validate()
-            .serializingDecodable(T.self).value
+            .serializingDecodable(T.self)
+            .value
     }
 }

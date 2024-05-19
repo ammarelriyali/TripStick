@@ -10,7 +10,7 @@ import XCTest
 
 final class TestNetworkClient: XCTestCase {
     let network = NetworkClient()
- 
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
@@ -20,28 +20,26 @@ final class TestNetworkClient: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testLoadDataFromURL() {
-        let exp = expectation(description: "waiting for the API")
-//        network.load(endPoint: "google.com",
-//                     parameters: nil, method: .get)
-//        (targetUrl: FixturesDataSource.url,
-//                                     parameters: nil
-//                                     , method: .get) { (result: Result<FixtureMainResponse,
-//                                                                       NetworkError>) in
-//            switch result {
-//            case .success(let data):
-//                guard let count = data.matches?.count else {
-//                    XCTFail("data empty")
-//                    exp.fulfill()
-//                    return
-//                }
-//                XCTAssertGreaterThan(count, 0, "arr is empty ")
-//                exp.fulfill()
-//            case .failure(let error):
-//                XCTFail(error.localizedDescription)
-//                exp.fulfill()
-//            }
-//        }
-//        waitForExpectations(timeout: 10, handler: nil)
+    func testLoadDataFromURL_Success() async throws {
+        // give
+        let response: FakeResponse =  try await network.load(endPoint: "https://jsonplaceholder.typicode.com/todos/1",
+                      method: .get)
+        // then
+        XCTAssertNotNil(response, "Data should not be nil")
     }
+    
+    func testLoadDataFromURL_Erorr() async throws {
+        // give
+        do {
+            let _: FakeResponse =  try await network.load(endPoint: "https://jsonplaceholder.t.com/todos/1",
+                                                                 method: .get)
+        } catch let erorr  {
+            // then
+            XCTAssertNotNil(erorr, "erorr should not be nil")
+        }
+    }
+}
+
+private struct FakeResponse: Decodable {
+    
 }
