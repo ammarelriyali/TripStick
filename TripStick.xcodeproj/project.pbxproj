@@ -266,6 +266,7 @@
 			mainGroup = 0498BD492BFA6350007EFEE6;
 			packageReferences = (
 				0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				044C48A52BFA7A81003F1EFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0498BD532BFA6351007EFEE6 /* Products */;
 			projectDirPath = "";
@@ -578,6 +579,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		044C48A52BFA7A81003F1EFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 		0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
