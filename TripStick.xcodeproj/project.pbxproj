@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0459CA492BFA64F100E52C45 /* NewtorkConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA482BFA64F100E52C45 /* NewtorkConstans.swift */; };
+		0459CA4C2BFA656100E52C45 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0459CA4B2BFA656100E52C45 /* Alamofire */; };
+		0459CA4E2BFA656100E52C45 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0459CA4D2BFA656100E52C45 /* AlamofireDynamic */; };
 		0498BD562BFA6351007EFEE6 /* TripStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498BD552BFA6351007EFEE6 /* TripStickApp.swift */; };
 		0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498BD572BFA6351007EFEE6 /* ContentView.swift */; };
 		0498BD5A2BFA6351007EFEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498BD592BFA6351007EFEE6 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0459CA482BFA64F100E52C45 /* NewtorkConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtorkConstans.swift; sourceTree = "<group>"; };
 		0498BD522BFA6351007EFEE6 /* TripStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498BD552BFA6351007EFEE6 /* TripStickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStickApp.swift; sourceTree = "<group>"; };
 		0498BD572BFA6351007EFEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459CA4C2BFA656100E52C45 /* Alamofire in Frameworks */,
+				0459CA4E2BFA656100E52C45 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0459CA452BFA648100E52C45 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0459CA472BFA64BD00E52C45 /* NetworkClient */,
+				0459CA462BFA64B800E52C45 /* Helper */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0459CA462BFA64B800E52C45 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0459CA482BFA64F100E52C45 /* NewtorkConstans.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0459CA472BFA64BD00E52C45 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
 		0498BD492BFA6350007EFEE6 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +81,7 @@
 		0498BD542BFA6351007EFEE6 /* TripStick */ = {
 			isa = PBXGroup;
 			children = (
+				0459CA452BFA648100E52C45 /* Network */,
 				0498BD552BFA6351007EFEE6 /* TripStickApp.swift */,
 				0498BD572BFA6351007EFEE6 /* ContentView.swift */,
 				0498BD592BFA6351007EFEE6 /* Assets.xcassets */,
@@ -83,6 +114,10 @@
 			dependencies = (
 			);
 			name = TripStick;
+			packageProductDependencies = (
+				0459CA4B2BFA656100E52C45 /* Alamofire */,
+				0459CA4D2BFA656100E52C45 /* AlamofireDynamic */,
+			);
 			productName = TripStick;
 			productReference = 0498BD522BFA6351007EFEE6 /* TripStick.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 0498BD492BFA6350007EFEE6;
+			packageReferences = (
+				0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0498BD532BFA6351007EFEE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459CA492BFA64F100E52C45 /* NewtorkConstans.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
 				0498BD562BFA6351007EFEE6 /* TripStickApp.swift in Sources */,
 			);
@@ -344,6 +383,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0459CA4B2BFA656100E52C45 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0459CA4D2BFA656100E52C45 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0498BD4A2BFA6350007EFEE6 /* Project object */;
 }
