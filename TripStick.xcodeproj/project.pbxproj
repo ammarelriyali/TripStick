@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F1B8D2BFA8E4C00836076 /* TabBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B8C2BFA8E4C00836076 /* TabBarMainView.swift */; };
+		040F1B8F2BFA8F0700836076 /* AppMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B8E2BFA8F0700836076 /* AppMethods.swift */; };
+		040F1B922BFA8F5F00836076 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B912BFA8F5F00836076 /* RoundedCorner.swift */; };
+		040F1B942BFA915800836076 /* Constants+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B932BFA915800836076 /* Constants+Icons.swift */; };
+		0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8ED2BFA896A003F5A2E /* TabBarView.swift */; };
+		0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */; };
+		0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */; };
 		044C489D2BFA7725003F1EFE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C489C2BFA7725003F1EFE /* Colors.xcassets */; };
 		044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C489F2BFA780F003F1EFE /* View+IsHidden.swift */; };
 		044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C48A32BFA7872003F1EFE /* ColorsExtension.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040F1B8C2BFA8E4C00836076 /* TabBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainView.swift; sourceTree = "<group>"; };
+		040F1B8E2BFA8F0700836076 /* AppMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMethods.swift; sourceTree = "<group>"; };
+		040F1B912BFA8F5F00836076 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		040F1B932BFA915800836076 /* Constants+Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Icons.swift"; sourceTree = "<group>"; };
+		0446C8ED2BFA896A003F5A2E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabs.swift; sourceTree = "<group>"; };
+		0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Tabbar.swift"; sourceTree = "<group>"; };
 		044C489C2BFA7725003F1EFE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		044C489F2BFA780F003F1EFE /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
 		044C48A32BFA7872003F1EFE /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
@@ -80,6 +94,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040F1B902BFA8F4000836076 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				040F1B912BFA8F5F00836076 /* RoundedCorner.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		0446C8EB2BFA88AA003F5A2E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0446C8EC2BFA893B003F5A2E /* TabBarView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0446C8EC2BFA893B003F5A2E /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				0446C8ED2BFA896A003F5A2E /* TabBarView.swift */,
+				040F1B8C2BFA8E4C00836076 /* TabBarMainView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		0446C8EF2BFA8A40003F5A2E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		044C489E2BFA77E9003F1EFE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +155,11 @@
 		044C48A62BFA7AB0003F1EFE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				040F1B902BFA8F4000836076 /* Modifiers */,
+				0446C8EF2BFA8A40003F5A2E /* Enums */,
 				044C48AE2BFA858F003F1EFE /* Constants */,
 				044C48A72BFA7AC8003F1EFE /* Views */,
+				040F1B8E2BFA8F0700836076 /* AppMethods.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -128,6 +178,8 @@
 			children = (
 				044C48AF2BFA85BB003F1EFE /* Constants.swift */,
 				044C48B12BFA85CC003F1EFE /* Constants+ResultView.swift */,
+				0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */,
+				040F1B932BFA915800836076 /* Constants+Icons.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -213,9 +265,10 @@
 		0498BD542BFA6351007EFEE6 /* TripStick */ = {
 			isa = PBXGroup;
 			children = (
-				044C48A62BFA7AB0003F1EFE /* Utils */,
+				0446C8EB2BFA88AA003F5A2E /* Modules */,
 				0459CA6D2BFA747E00E52C45 /* AppFiles */,
 				0459CA452BFA648100E52C45 /* Network */,
+				044C48A62BFA7AB0003F1EFE /* Utils */,
 				044C489E2BFA77E9003F1EFE /* Extensions */,
 				0459CA6B2BFA747E00E52C45 /* Catalog */,
 				0498BD572BFA6351007EFEE6 /* ContentView.swift */,
@@ -351,16 +404,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F1B8F2BFA8F0700836076 /* AppMethods.swift in Sources */,
 				044C48A92BFA7AE0003F1EFE /* ImageView.swift in Sources */,
 				0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */,
 				044C48AD2BFA8572003F1EFE /* ResultView.swift in Sources */,
 				044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */,
 				044C48B22BFA85CC003F1EFE /* Constants+ResultView.swift in Sources */,
+				040F1B8D2BFA8E4C00836076 /* TabBarMainView.swift in Sources */,
 				0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */,
+				040F1B922BFA8F5F00836076 /* RoundedCorner.swift in Sources */,
 				044C48B02BFA85BB003F1EFE /* Constants.swift in Sources */,
+				0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */,
 				044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */,
+				0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */,
 				0459CA502BFA664A00E52C45 /* AnyNetwork.swift in Sources */,
+				040F1B942BFA915800836076 /* Constants+Icons.swift in Sources */,
 				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,
+				0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TripStickApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TabBarView()
+            }
         }
     }
 }
