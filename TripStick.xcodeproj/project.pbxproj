@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044C489D2BFA7725003F1EFE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C489C2BFA7725003F1EFE /* Colors.xcassets */; };
+		044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C489F2BFA780F003F1EFE /* View+IsHidden.swift */; };
+		044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C48A32BFA7872003F1EFE /* ColorsExtension.swift */; };
 		0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA482BFA64F100E52C45 /* NetworkConstants.swift */; };
 		0459CA4C2BFA656100E52C45 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0459CA4B2BFA656100E52C45 /* Alamofire */; };
 		0459CA4E2BFA656100E52C45 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0459CA4D2BFA656100E52C45 /* AlamofireDynamic */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044C489C2BFA7725003F1EFE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		044C489F2BFA780F003F1EFE /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
+		044C48A32BFA7872003F1EFE /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
 		0459CA482BFA64F100E52C45 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		0459CA4F2BFA664A00E52C45 /* AnyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNetwork.swift; sourceTree = "<group>"; };
 		0459CA512BFA666D00E52C45 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -64,6 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044C489E2BFA77E9003F1EFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				044C48A22BFA7850003F1EFE /* Color */,
+				044C48A12BFA7812003F1EFE /* View */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		044C48A12BFA7812003F1EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				044C489F2BFA780F003F1EFE /* View+IsHidden.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044C48A22BFA7850003F1EFE /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				044C48A32BFA7872003F1EFE /* ColorsExtension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		0459CA452BFA648100E52C45 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				0459CA6A2BFA747E00E52C45 /* Assets.xcassets */,
+				044C489C2BFA7725003F1EFE /* Colors.xcassets */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -144,6 +176,7 @@
 		0498BD542BFA6351007EFEE6 /* TripStick */ = {
 			isa = PBXGroup;
 			children = (
+				044C489E2BFA77E9003F1EFE /* Extensions */,
 				0459CA6D2BFA747E00E52C45 /* AppFiles */,
 				0459CA6B2BFA747E00E52C45 /* Catalog */,
 				0459CA452BFA648100E52C45 /* Network */,
@@ -256,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044C489D2BFA7725003F1EFE /* Colors.xcassets in Resources */,
 				0459CA6E2BFA747E00E52C45 /* Assets.xcassets in Resources */,
 				0498BD5D2BFA6351007EFEE6 /* Preview Assets.xcassets in Resources */,
 			);
@@ -278,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */,
+				044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */,
 				0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */,
+				044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */,
 				0459CA502BFA664A00E52C45 /* AnyNetwork.swift in Sources */,
 				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
