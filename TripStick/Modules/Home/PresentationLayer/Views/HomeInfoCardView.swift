@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct HomeInfoCardView: View {
+    let imageName: String
+    let text: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25)
+            .stroke(lineWidth: 1)
+            .foregroundColor(.gray)
+            .frame(width: 180, height: 180)
+            .overlay {
+                VStack(alignment: .leading,spacing: 0) {
+                    HStack{
+                        Image(imageName)
+                            .resizable()
+                            .frame(width: 70,height: 70)
+                            .padding()
+                        Spacer()
+                    }
+                    Spacer()
+                    Text(text)
+                        .font(.title3)
+                        .bold()
+                        .padding()
+                }
+            }
     }
 }
 
 #Preview {
-    HomeInfoCardView()
+    HomeInfoCardView(imageName: "ic_app_name_and_image",
+                     text: "Title")
 }

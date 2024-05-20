@@ -34,7 +34,7 @@ struct TravelInspirationDataModel: Codable {
                                      title: title,
                                      subTitle: subTitle,
                                      buttonTitle: buttonTitle,
-                                     destinationCityList: destinationCityList,
+                                     destinationCityList: destinationCityList?.map{ $0.mapToDomainModel()},
                                      did: did)
     }
     

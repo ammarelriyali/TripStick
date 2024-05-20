@@ -26,6 +26,7 @@
 		043E3EA32BFBD7BA00CFD913 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3EA22BFBD7BA00CFD913 /* HomeViewModel.swift */; };
 		043E3EA72BFBDA7C00CFD913 /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3EA62BFBDA7C00CFD913 /* Paginatable.swift */; };
 		043E3EA92BFBDCFD00CFD913 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3EA82BFBDCFD00CFD913 /* HomeScreen.swift */; };
+		043E3EAC2BFBDE1400CFD913 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 043E3EAB2BFBDE1400CFD913 /* SwiftUIPullToRefresh */; };
 		0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8ED2BFA896A003F5A2E /* TabBarView.swift */; };
 		0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */; };
 		0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */; };
@@ -48,6 +49,10 @@
 		0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459CA6C2BFA747E00E52C45 /* TripStickApp.swift */; };
 		0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498BD572BFA6351007EFEE6 /* ContentView.swift */; };
 		0498BD5D2BFA6351007EFEE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498BD5C2BFA6351007EFEE6 /* Preview Assets.xcassets */; };
+		04A22BCE2BFBE0C600EDB120 /* Constants+HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A22BCD2BFBE0C600EDB120 /* Constants+HomeScreen.swift */; };
+		04A22BD02BFBE19900EDB120 /* HomeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A22BCF2BFBE19900EDB120 /* HomeInfoView.swift */; };
+		04A22BD22BFBE39800EDB120 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A22BD12BFBE39800EDB120 /* HomeTopView.swift */; };
+		04A22BD42BFBF12100EDB120 /* HomeInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A22BD32BFBF12100EDB120 /* HomeInfoCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,10 @@
 		0498BD522BFA6351007EFEE6 /* TripStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498BD572BFA6351007EFEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0498BD5C2BFA6351007EFEE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04A22BCD2BFBE0C600EDB120 /* Constants+HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+HomeScreen.swift"; sourceTree = "<group>"; };
+		04A22BCF2BFBE19900EDB120 /* HomeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfoView.swift; sourceTree = "<group>"; };
+		04A22BD12BFBE39800EDB120 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
+		04A22BD32BFBF12100EDB120 /* HomeInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfoCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,7 @@
 			files = (
 				044C48AB2BFA8431003F1EFE /* Kingfisher in Frameworks */,
 				0459CA4C2BFA656100E52C45 /* Alamofire in Frameworks */,
+				043E3EAC2BFBDE1400CFD913 /* SwiftUIPullToRefresh in Frameworks */,
 				0459CA4E2BFA656100E52C45 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				043E3EA82BFBDCFD00CFD913 /* HomeScreen.swift */,
+				04A22BCF2BFBE19900EDB120 /* HomeInfoView.swift */,
+				04A22BD12BFBE39800EDB120 /* HomeTopView.swift */,
+				04A22BD32BFBF12100EDB120 /* HomeInfoCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +382,7 @@
 				044C48B12BFA85CC003F1EFE /* Constants+ResultView.swift */,
 				0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */,
 				040F1B932BFA915800836076 /* Constants+Icons.swift */,
+				04A22BCD2BFBE0C600EDB120 /* Constants+HomeScreen.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -512,6 +526,7 @@
 				0459CA4B2BFA656100E52C45 /* Alamofire */,
 				0459CA4D2BFA656100E52C45 /* AlamofireDynamic */,
 				044C48AA2BFA8431003F1EFE /* Kingfisher */,
+				043E3EAB2BFBDE1400CFD913 /* SwiftUIPullToRefresh */,
 			);
 			productName = TripStick;
 			productReference = 0498BD522BFA6351007EFEE6 /* TripStick.app */;
@@ -597,6 +612,7 @@
 				040F1B8F2BFA8F0700836076 /* AppMethods.swift in Sources */,
 				044C48A92BFA7AE0003F1EFE /* ImageView.swift in Sources */,
 				043E3E982BFBC44C00CFD913 /* DestinationCityDomainModel.swift in Sources */,
+				04A22BD22BFBE39800EDB120 /* HomeTopView.swift in Sources */,
 				0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */,
 				043E3EA72BFBDA7C00CFD913 /* Paginatable.swift in Sources */,
 				044C48AD2BFA8572003F1EFE /* ResultView.swift in Sources */,
@@ -606,6 +622,7 @@
 				044C48B22BFA85CC003F1EFE /* Constants+ResultView.swift in Sources */,
 				040F1B8D2BFA8E4C00836076 /* TabBarMainView.swift in Sources */,
 				0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */,
+				04A22BD42BFBF12100EDB120 /* HomeInfoCardView.swift in Sources */,
 				040F1B922BFA8F5F00836076 /* RoundedCorner.swift in Sources */,
 				043E3E902BFBC39E00CFD913 /* HomeProvider.swift in Sources */,
 				044C48B02BFA85BB003F1EFE /* Constants.swift in Sources */,
@@ -622,7 +639,9 @@
 				043E3E9A2BFBC45900CFD913 /* TravelInspirationDomainModel.swift in Sources */,
 				043E3EA92BFBDCFD00CFD913 /* HomeScreen.swift in Sources */,
 				043E3E9C2BFBC53600CFD913 /* TravelInspirationTypeEnum.swift in Sources */,
+				04A22BCE2BFBE0C600EDB120 /* Constants+HomeScreen.swift in Sources */,
 				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,
+				04A22BD02BFBE19900EDB120 /* HomeInfoView.swift in Sources */,
 				0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
 				043E3EA32BFBD7BA00CFD913 /* HomeViewModel.swift in Sources */,
@@ -914,6 +933,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		043E3EAB2BFBDE1400CFD913 /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 043E3EAA2BFBDDC700CFD913 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
 		044C48AA2BFA8431003F1EFE /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 044C48A52BFA7A81003F1EFE /* XCRemoteSwiftPackageReference "Kingfisher" */;
