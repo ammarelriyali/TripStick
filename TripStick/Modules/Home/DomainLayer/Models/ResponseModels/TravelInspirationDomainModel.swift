@@ -13,6 +13,6 @@ struct TravelInspirationDomainModel {
     let imageURL: String?
     let title, subTitle: String?
     let buttonTitle: String?
-    let destinationCityList: [DestinationCityDataModel]?
+    let destinationCityList: [DestinationCityDomainModel]?
     let did: Int?
 }
