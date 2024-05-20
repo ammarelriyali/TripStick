@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DestinationCity: Codable {
+struct DestinationCityDataModel: Codable {
     let cityID: Int
     let title, subTitle: String
     let imageURL: String
@@ -17,5 +17,11 @@ struct DestinationCity: Codable {
         case title
         case subTitle = "sub_title"
         case imageURL = "image_url"
+    }
+    func mapToDomainModel() -> DestinationCityDomainModel {
+        DestinationCityDomainModel(cityID: cityID,
+                                   title: title,
+                                   subTitle: subTitle,
+                                   imageURL: imageURL)
     }
 }

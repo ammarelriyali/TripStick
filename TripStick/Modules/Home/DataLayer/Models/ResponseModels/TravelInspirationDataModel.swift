@@ -7,21 +7,35 @@
 
 import Foundation
 
-struct TravelInspiration: Codable {
-    let id, sequence: Int
-    let type: String
+struct TravelInspirationDataModel: Codable {
+    let id, sequence: Int?
+    let type: TravelInspirationTypeEnum?
     let imageURL: String?
-    let title, subTitle: String
+    let title, subTitle: String?
     let buttonTitle: String?
-    let list: [DestinationCity]?
+    let destinationCityList: [DestinationCityDataModel]?
     let did: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case id, sequence, type
         case imageURL = "image_url"
         case title
         case subTitle = "sub_title"
         case buttonTitle = "button_title"
-        case list, did
+        case destinationCityList = "list"
+        case did
     }
+    
+    func mapToDomainModel() -> TravelInspirationDomainModel {
+        TravelInspirationDomainModel(id: id,
+                                     sequence: sequence,
+                                     type: type,
+                                     imageURL: imageURL,
+                                     title: title,
+                                     subTitle: subTitle,
+                                     buttonTitle: buttonTitle,
+                                     destinationCityList: destinationCityList,
+                                     did: did)
+    }
+    
 }
