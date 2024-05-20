@@ -548,6 +548,7 @@
 			packageReferences = (
 				0459CA4A2BFA656100E52C45 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				044C48A52BFA7A81003F1EFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				043E3EAA2BFBDDC700CFD913 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */,
 			);
 			productRefGroup = 0498BD532BFA6351007EFEE6 /* Products */;
 			projectDirPath = "";
@@ -886,6 +887,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		043E3EAA2BFBDDC700CFD913 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-pull-to-refresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.9;
+			};
+		};
 		044C48A52BFA7A81003F1EFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
