@@ -11,6 +11,10 @@
 		040F1B8F2BFA8F0700836076 /* AppMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B8E2BFA8F0700836076 /* AppMethods.swift */; };
 		040F1B922BFA8F5F00836076 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B912BFA8F5F00836076 /* RoundedCorner.swift */; };
 		040F1B942BFA915800836076 /* Constants+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F1B932BFA915800836076 /* Constants+Icons.swift */; };
+		043E3E7C2BFBC04900CFD913 /* HomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3E7B2BFBC04900CFD913 /* HomeDataModel.swift */; };
+		043E3E7F2BFBC1B900CFD913 /* TravelInspirationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3E7E2BFBC1B900CFD913 /* TravelInspirationDataModel.swift */; };
+		043E3E812BFBC1FA00CFD913 /* DestinationCityDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3E802BFBC1FA00CFD913 /* DestinationCityDataModel.swift */; };
+		043E3E832BFBC24C00CFD913 /* HomeRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3E822BFBC24C00CFD913 /* HomeRepoImp.swift */; };
 		0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8ED2BFA896A003F5A2E /* TabBarView.swift */; };
 		0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */; };
 		0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */; };
@@ -50,6 +54,10 @@
 		040F1B8E2BFA8F0700836076 /* AppMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMethods.swift; sourceTree = "<group>"; };
 		040F1B912BFA8F5F00836076 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		040F1B932BFA915800836076 /* Constants+Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Icons.swift"; sourceTree = "<group>"; };
+		043E3E7B2BFBC04900CFD913 /* HomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataModel.swift; sourceTree = "<group>"; };
+		043E3E7E2BFBC1B900CFD913 /* TravelInspirationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInspirationDataModel.swift; sourceTree = "<group>"; };
+		043E3E802BFBC1FA00CFD913 /* DestinationCityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCityDataModel.swift; sourceTree = "<group>"; };
+		043E3E822BFBC24C00CFD913 /* HomeRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepoImp.swift; sourceTree = "<group>"; };
 		0446C8ED2BFA896A003F5A2E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabs.swift; sourceTree = "<group>"; };
 		0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Tabbar.swift"; sourceTree = "<group>"; };
@@ -102,9 +110,117 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		043E3E712BFBB5E700CFD913 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E722BFBB5EB00CFD913 /* DataLayer */,
+				043E3E732BFBB91A00CFD913 /* DomainLayer */,
+				043E3E742BFBB92400CFD913 /* PresentationLayer */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		043E3E722BFBB5EB00CFD913 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E782BFBB96A00CFD913 /* Models */,
+				043E3E772BFBB95D00CFD913 /* Repositories */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		043E3E732BFBB91A00CFD913 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E862BFBC27200CFD913 /* Repositories */,
+				043E3E852BFBC25E00CFD913 /* UseCases */,
+				043E3E842BFBC25600CFD913 /* Models */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		043E3E742BFBB92400CFD913 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E762BFBB93C00CFD913 /* ViewModels */,
+				043E3E752BFBB93700CFD913 /* Views */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		043E3E752BFBB93700CFD913 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		043E3E762BFBB93C00CFD913 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		043E3E772BFBB95D00CFD913 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E822BFBC24C00CFD913 /* HomeRepoImp.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		043E3E782BFBB96A00CFD913 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E7A2BFBB98500CFD913 /* ResponseModels */,
+				043E3E792BFBB97300CFD913 /* RequestModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		043E3E792BFBB97300CFD913 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		043E3E7A2BFBB98500CFD913 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				043E3E7B2BFBC04900CFD913 /* HomeDataModel.swift */,
+				043E3E7E2BFBC1B900CFD913 /* TravelInspirationDataModel.swift */,
+				043E3E802BFBC1FA00CFD913 /* DestinationCityDataModel.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		043E3E842BFBC25600CFD913 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		043E3E852BFBC25E00CFD913 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		043E3E862BFBC27200CFD913 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		0446C8EB2BFA88AA003F5A2E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				043E3E712BFBB5E700CFD913 /* Home */,
 				0446C8EC2BFA893B003F5A2E /* TabBarView */,
 			);
 			path = Modules;
@@ -416,12 +532,16 @@
 				044C48B02BFA85BB003F1EFE /* Constants.swift in Sources */,
 				0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */,
 				044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */,
+				043E3E7F2BFBC1B900CFD913 /* TravelInspirationDataModel.swift in Sources */,
 				0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */,
+				043E3E7C2BFBC04900CFD913 /* HomeDataModel.swift in Sources */,
 				0459CA502BFA664A00E52C45 /* AnyNetwork.swift in Sources */,
 				040F1B942BFA915800836076 /* Constants+Icons.swift in Sources */,
+				043E3E812BFBC1FA00CFD913 /* DestinationCityDataModel.swift in Sources */,
 				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,
 				0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */,
 				0498BD582BFA6351007EFEE6 /* ContentView.swift in Sources */,
+				043E3E832BFBC24C00CFD913 /* HomeRepoImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
