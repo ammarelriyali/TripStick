@@ -19,5 +19,6 @@ extension Constants {
         static let subtitleMemberCard = "Prices drop the moment you signup as a Tripstick member"
         static let buttonTextMemberCard = "Join"
         static let iconMemberCard = "ic_member_card"
+        static let closeIconMemberCard = "xmark"
     }
 }

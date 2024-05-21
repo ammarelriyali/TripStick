@@ -28,14 +28,16 @@ struct HomeInfoView: View {
                     }
                 }).padding(.horizontal, 8)
             }.frame(height: 170)
+                .isHidden(cardsInfoList.isEmpty, remove: true)
             ZStack {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(Constants.HomeScreen.titleMemberCard)
-                            .font(.title2)
+                            .font(.headline)
                             .bold()
                         Text(Constants.HomeScreen.subtitleMemberCard)
                             .lineLimit(nil)
+                            .font(.callout)
                         Spacer(minLength: 0)
                         Button(action: {
                             print("Join")
@@ -48,17 +50,35 @@ struct HomeInfoView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 40))
                         })
                     }.padding(.all, 20)
+                        .padding(.vertical, 12)
                     Spacer(minLength: 0)
                     Image(Constants.HomeScreen.iconMemberCard)
                         .resizable()
-                        .frame(width: 160,height: 250)
+                        .frame(width: 160,height: 235)
                         .offset(x: 12)
-                }.frame(height: 260)
+                        .overlay {
+                            VStack{
+                                HStack {
+                                    Spacer()
+                                    Button(action: {
+                                        print("close member")
+                                    }, label: {
+                                        Image(systemName:Constants.HomeScreen.closeIconMemberCard)
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
+                                            .foregroundColor(.black)
+                                    }).padding(.all, 20)
+                                }
+                                Spacer()
+
+                            }
+                        }
+                }.frame(height: 240)
 
                 RoundedRectangle(cornerRadius: 40)
                     .stroke(lineWidth: 1.5)
                     .foregroundColor(.gray)
-                    .frame(height: 260)
+                    .frame(height: 240)
                     
             }.padding()
             

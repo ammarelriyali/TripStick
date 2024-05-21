@@ -10,15 +10,10 @@ import SwiftUIPullToRefresh
 
 struct HomeScreen: View {
     
-    @StateObject var viewModel: HomeViewModel
+    @StateObject var viewModel = HomeViewModel(useCase: HomeUseCaseImp(repository: HomeRepoImp(network: NetworkClient())))
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
-            
-            Text(Constants.HomeScreen.appName)
-                .font(.title)
-                .foregroundStyle(Color.highlight)
-                .padding(.horizontal)
             
             RefreshableScrollView(showsIndicators: false,
                                   loadingViewBackgroundColor: .theme.background) { doneRefreshing in
@@ -28,6 +23,7 @@ struct HomeScreen: View {
                 doneRefreshing()
             } content: {
                 LazyVStack(spacing: 10) {
+                    HomeInfoView(cardsInfoList: [])
                     
                     Spacer()
                     

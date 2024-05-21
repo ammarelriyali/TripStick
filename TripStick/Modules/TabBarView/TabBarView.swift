@@ -17,8 +17,8 @@ struct TabBarView: View {
         ZStack(alignment: .top) {
 
             TabView(selection: $selectedTab) {
-                ContentView()
-                    .tag(MainTabs.home)  
+                HomeScreen()
+                    .tag(MainTabs.home)
                 
                 ContentView()
                     .tag(MainTabs.explore)
