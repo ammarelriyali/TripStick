@@ -32,7 +32,10 @@ class HomeViewModel: ObservableObject, Paginatable {
         let response = await useCase.getHomeData()
         switch response {
         case .success(let data):
-            return data.travelInspirationList ?? []
+            listIsFull = true
+            
+            return data.travelInspirationList?
+                .sorted(by: {firstTravelInspiration, SecondTravelInspiration in firstTravelInspiration.sequence ?? 0 > SecondTravelInspiration.sequence ?? 0}) ?? []
         case .failure(let error):
             self.errorMsg = error.localizedDescription
             print(errorMsg)

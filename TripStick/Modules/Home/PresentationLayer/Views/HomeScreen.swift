@@ -44,7 +44,6 @@ struct HomeScreen: View {
                 }.isHidden(viewModel.data.isEmpty, remove: true)
                 
             }
-            .padding(.horizontal, 12)
             .background(Color.theme.background)
             .task {
                 await viewModel.loadDataList()

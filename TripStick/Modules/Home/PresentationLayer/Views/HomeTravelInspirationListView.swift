@@ -14,10 +14,13 @@ struct HomeTravelInspirationListView: View {
         ForEach(travelInspirationList, id: \.sequence) { travelInspiration in
             
             HomeFeaturedStayCardView(featuredStay: travelInspiration)
-                .isHidden(travelInspiration.type == .destinationList, remove: false)
+                .isHidden(travelInspiration.type == .destinationList, remove: true)
+                .padding(.vertical, 12)
             
             HomeDestinationListView(destinationList: travelInspiration)
-                .isHidden(travelInspiration.type == .featuredStays, remove: false)
+                .isHidden(travelInspiration.type == .featuredStays,
+                          remove: true)
+                .padding(.vertical, 12)
 
         }.redacted(reason: isLoading ? .placeholder : [])
     }
