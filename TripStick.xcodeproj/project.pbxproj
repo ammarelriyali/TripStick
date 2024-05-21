@@ -407,13 +407,13 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		0459CA452BFA648100E52C45 /* Network */ = {
+		0459CA452BFA648100E52C45 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				0459CA472BFA64BD00E52C45 /* NetworkClient */,
 				0459CA462BFA64B800E52C45 /* Helper */,
 			);
-			path = Network;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		0459CA462BFA64B800E52C45 /* Helper */ = {
@@ -490,7 +490,7 @@
 			children = (
 				0446C8EB2BFA88AA003F5A2E /* Modules */,
 				0459CA6D2BFA747E00E52C45 /* AppFiles */,
-				0459CA452BFA648100E52C45 /* Network */,
+				0459CA452BFA648100E52C45 /* Networking */,
 				044C48A62BFA7AB0003F1EFE /* Utils */,
 				044C489E2BFA77E9003F1EFE /* Extensions */,
 				0459CA6B2BFA747E00E52C45 /* Catalog */,

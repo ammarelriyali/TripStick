@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeTravelInspirationListView: View {
-    @Binding var travelInspirationList: [TravelInspirationDomainModel]
-    @Binding var isLoading: Bool
+    let travelInspirationList: [TravelInspirationDomainModel]
+    let  isLoading: Bool
     var body: some View {
         ForEach(travelInspirationList, id: \.sequence) { travelInspiration in
             
@@ -27,6 +27,6 @@ struct HomeTravelInspirationListView: View {
 }
 
 #Preview {
-    HomeTravelInspirationListView(travelInspirationList: .constant([]),
-                                  isLoading: .constant(false))
+    HomeTravelInspirationListView(travelInspirationList: [],
+                                  isLoading: false)
 }

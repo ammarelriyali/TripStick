@@ -27,8 +27,8 @@ struct HomeScreen: View {
                     
                     Spacer()
                     
-                    HomeTravelInspirationListView(travelInspirationList: $viewModel.data,
-                                                  isLoading: $viewModel.isLoading)
+                    HomeTravelInspirationListView(travelInspirationList: viewModel.data,
+                                                  isLoading: viewModel.isLoading)
                     HStack {
                         Spacer()
                         ProgressView()
