@@ -23,13 +23,12 @@ struct HomeScreen: View {
                 doneRefreshing()
             } content: {
                 LazyVStack(spacing: 10) {
-                    HomeInfoView(cardsInfoList: [])
+                    HomeInfoView(cardsInfoList: viewModel.createFakeDataHomeCardInfo())
                     
                     Spacer()
                     
-                    ForEach($viewModel.data, id: \.id) { travelInspiration in
-//                        RepositoryCardView(repository: repository.wrappedValue)
-                    }
+                    HomeTravelInspirationListView(travelInspirationList: $viewModel.data,
+                                                  isLoading: $viewModel.isLoading)
                     HStack {
                         Spacer()
                         ProgressView()
@@ -44,12 +43,12 @@ struct HomeScreen: View {
                     Spacer()
                 }.isHidden(viewModel.data.isEmpty, remove: true)
                 
-            }.redacted(reason: viewModel.isLoading ? .placeholder : [])
-                .padding(.horizontal, 12)
-                .background(Color.theme.background)
-                .task {
-                    await viewModel.loadDataList()
-                }
+            }
+            .padding(.horizontal, 12)
+            .background(Color.theme.background)
+            .task {
+                await viewModel.loadDataList()
+            }
         }.background(Color.theme.backgroundCard)
             .overlay {
                 ResultView(resultMessage: $viewModel.errorMsg)

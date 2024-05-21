@@ -27,6 +27,9 @@
 		043E3EA72BFBDA7C00CFD913 /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3EA62BFBDA7C00CFD913 /* Paginatable.swift */; };
 		043E3EA92BFBDCFD00CFD913 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E3EA82BFBDCFD00CFD913 /* HomeScreen.swift */; };
 		043E3EAC2BFBDE1400CFD913 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 043E3EAB2BFBDE1400CFD913 /* SwiftUIPullToRefresh */; };
+		0441E71F2BFD297000D8371F /* HomeTravelInspirationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E71E2BFD297000D8371F /* HomeTravelInspirationListView.swift */; };
+		0441E7222BFD2B4F00D8371F /* HomeFeaturedStayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E7212BFD2B4F00D8371F /* HomeFeaturedStayCardView.swift */; };
+		0441E7242BFD2B6B00D8371F /* HomeDestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E7232BFD2B6A00D8371F /* HomeDestinationListView.swift */; };
 		0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8ED2BFA896A003F5A2E /* TabBarView.swift */; };
 		0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */; };
 		0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */; };
@@ -86,6 +89,9 @@
 		043E3EA22BFBD7BA00CFD913 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		043E3EA62BFBDA7C00CFD913 /* Paginatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginatable.swift; sourceTree = "<group>"; };
 		043E3EA82BFBDCFD00CFD913 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0441E71E2BFD297000D8371F /* HomeTravelInspirationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTravelInspirationListView.swift; sourceTree = "<group>"; };
+		0441E7212BFD2B4F00D8371F /* HomeFeaturedStayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeaturedStayCardView.swift; sourceTree = "<group>"; };
+		0441E7232BFD2B6A00D8371F /* HomeDestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDestinationListView.swift; sourceTree = "<group>"; };
 		0446C8ED2BFA896A003F5A2E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabs.swift; sourceTree = "<group>"; };
 		0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Tabbar.swift"; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 				04A22BCF2BFBE19900EDB120 /* HomeInfoView.swift */,
 				04A22BD12BFBE39800EDB120 /* HomeTopView.swift */,
 				04A22BD32BFBF12100EDB120 /* HomeInfoCardView.swift */,
+				0441E71E2BFD297000D8371F /* HomeTravelInspirationListView.swift */,
+				0441E7212BFD2B4F00D8371F /* HomeFeaturedStayCardView.swift */,
+				0441E7232BFD2B6A00D8371F /* HomeDestinationListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -627,10 +636,12 @@
 				0459CA492BFA64F100E52C45 /* NetworkConstants.swift in Sources */,
 				043E3EA72BFBDA7C00CFD913 /* Paginatable.swift in Sources */,
 				044C48AD2BFA8572003F1EFE /* ResultView.swift in Sources */,
+				0441E7242BFD2B6B00D8371F /* HomeDestinationListView.swift in Sources */,
 				044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */,
 				043E3E9F2BFBD32D00CFD913 /* HomeUseCaseProtocol.swift in Sources */,
 				043E3EA12BFBD34900CFD913 /* HomeUseCaseImp.swift in Sources */,
 				044C48B22BFA85CC003F1EFE /* Constants+ResultView.swift in Sources */,
+				0441E7222BFD2B4F00D8371F /* HomeFeaturedStayCardView.swift in Sources */,
 				040F1B8D2BFA8E4C00836076 /* TabBarMainView.swift in Sources */,
 				0459CA522BFA666D00E52C45 /* NetworkClient.swift in Sources */,
 				04A22BD42BFBF12100EDB120 /* HomeInfoCardView.swift in Sources */,
@@ -650,6 +661,7 @@
 				043E3E9A2BFBC45900CFD913 /* TravelInspirationDomainModel.swift in Sources */,
 				0448AEC02BFD167A00D11735 /* HomeCardInfoModel.swift in Sources */,
 				043E3EA92BFBDCFD00CFD913 /* HomeScreen.swift in Sources */,
+				0441E71F2BFD297000D8371F /* HomeTravelInspirationListView.swift in Sources */,
 				043E3E9C2BFBC53600CFD913 /* TravelInspirationTypeEnum.swift in Sources */,
 				04A22BCE2BFBE0C600EDB120 /* Constants+HomeScreen.swift in Sources */,
 				0459CA6F2BFA747E00E52C45 /* TripStickApp.swift in Sources */,

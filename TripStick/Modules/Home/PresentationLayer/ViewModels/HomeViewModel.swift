@@ -111,5 +111,12 @@ class HomeViewModel: ObservableObject, Paginatable {
                                      destinationListTwo,
                                      destinationListOne]
     }
+    
+    func createFakeDataHomeCardInfo() -> [HomeCardInfoModel]{
+        [HomeCardInfoModel(imageName: "ic_global",
+                                                       text: "Travel inspiration"),
+                                     HomeCardInfoModel(imageName: "ic_question",
+                                                       text: "Why choose tripstick?")]
+    }
 }
 
