@@ -15,5 +15,9 @@ extension Constants {
         static let iconSearch = "magnifyingglass"
         static let searchHint = "Where to?"
         static let appImageWithName = "ic_app_name_and_image"
+        static let titleMemberCard = "Are you a member?"
+        static let subtitleMemberCard = "Prices drop the moment you signup as a Tripstick member"
+        static let buttonTextMemberCard = "Join"
+        static let iconMemberCard = "ic_member_card"
     }
 }

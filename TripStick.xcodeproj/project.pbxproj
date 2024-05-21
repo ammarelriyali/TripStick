@@ -30,6 +30,7 @@
 		0446C8EE2BFA896A003F5A2E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8ED2BFA896A003F5A2E /* TabBarView.swift */; };
 		0446C8F12BFA8A4C003F5A2E /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */; };
 		0446C8F32BFA8B2C003F5A2E /* Constants+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */; };
+		0448AEC02BFD167A00D11735 /* HomeCardInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448AEBF2BFD167A00D11735 /* HomeCardInfoModel.swift */; };
 		044C489D2BFA7725003F1EFE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C489C2BFA7725003F1EFE /* Colors.xcassets */; };
 		044C48A02BFA780F003F1EFE /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C489F2BFA780F003F1EFE /* View+IsHidden.swift */; };
 		044C48A42BFA7872003F1EFE /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C48A32BFA7872003F1EFE /* ColorsExtension.swift */; };
@@ -88,6 +89,7 @@
 		0446C8ED2BFA896A003F5A2E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabs.swift; sourceTree = "<group>"; };
 		0446C8F22BFA8B2C003F5A2E /* Constants+Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Tabbar.swift"; sourceTree = "<group>"; };
+		0448AEBF2BFD167A00D11735 /* HomeCardInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardInfoModel.swift; sourceTree = "<group>"; };
 		044C489C2BFA7725003F1EFE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		044C489F2BFA780F003F1EFE /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
 		044C48A32BFA7872003F1EFE /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		043E3E742BFBB92400CFD913 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0448AEBE2BFD15A700D11735 /* Model */,
 				043E3E762BFBB93C00CFD913 /* ViewModels */,
 				043E3E752BFBB93700CFD913 /* Views */,
 			);
@@ -326,6 +329,14 @@
 				0446C8F02BFA8A4C003F5A2E /* MainTabs.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		0448AEBE2BFD15A700D11735 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0448AEBF2BFD167A00D11735 /* HomeCardInfoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		044C489E2BFA77E9003F1EFE /* Extensions */ = {
@@ -637,6 +648,7 @@
 				040F1B942BFA915800836076 /* Constants+Icons.swift in Sources */,
 				043E3E812BFBC1FA00CFD913 /* DestinationCityDataModel.swift in Sources */,
 				043E3E9A2BFBC45900CFD913 /* TravelInspirationDomainModel.swift in Sources */,
+				0448AEC02BFD167A00D11735 /* HomeCardInfoModel.swift in Sources */,
 				043E3EA92BFBDCFD00CFD913 /* HomeScreen.swift in Sources */,
 				043E3E9C2BFBC53600CFD913 /* TravelInspirationTypeEnum.swift in Sources */,
 				04A22BCE2BFBE0C600EDB120 /* Constants+HomeScreen.swift in Sources */,

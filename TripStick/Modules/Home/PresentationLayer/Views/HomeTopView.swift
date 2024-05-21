@@ -19,25 +19,24 @@ struct HomeTopView: View {
                     .resizable()
                     .frame(width: 20, height: 20)
                     .padding(.all, 4)
-                    
+                
                 Image(systemName: Constants.HomeScreen.iconNotification)
                     .resizable()
                     .frame(width: 20, height: 20)
                     .padding(.all, 4)
             }
             
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(lineWidth: 2)
-                    .frame(height: 50)
-                    .overlay {
-                        HStack(spacing: 12) {
-                            Image(systemName: Constants.HomeScreen.iconSearch)
-                                .resizable()
-                                .frame(width: 20,height: 20)
-                            Text(Constants.HomeScreen.searchHint)
-                            Spacer()
-                        }.padding()
-                    }
+            HStack(spacing: 12) {
+                Image(systemName: Constants.HomeScreen.iconSearch)
+                    .resizable()
+                    .frame(width: 20,height: 20)
+                Text(Constants.HomeScreen.searchHint)
+                Spacer()
+            }.padding()
+                .background(RoundedRectangle(cornerRadius: 25)
+                    .stroke(lineWidth: 1.5)
+                    .foregroundColor(.gray))
+                .frame(height: 50)
             
         }
     }
