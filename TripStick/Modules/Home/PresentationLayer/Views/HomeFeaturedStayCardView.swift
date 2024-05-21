@@ -12,7 +12,39 @@ struct HomeFeaturedStayCardView: View {
     let featuredStay: TravelInspirationDomainModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .leading) {
+            ImageView(imageURL: featuredStay.imageURL ?? "",
+                      placeholder: nil)
+            
+            
+            VStack(alignment: .leading) {
+                Spacer()
+                
+                Text(featuredStay.title ?? "")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 12)
+                
+                Text(featuredStay.subTitle ?? "")
+                    .font(.caption)
+                    .foregroundColor(.white)
+                    .padding(.all, 8)
+
+                Button(action: {
+                    print(featuredStay.buttonTitle ?? "" )
+                }, label: {
+                    Text(featuredStay.buttonTitle ?? "")
+                        .foregroundColor(.black)
+                        .font(.title3)
+                        .frame(width: 100, height: 40)
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 40))
+                    
+                }).padding(.horizontal, 12)
+            }.padding(.vertical, 24)
+                .frame(width: 300)
+        }.frame(height: 500)
     }
 }
 
